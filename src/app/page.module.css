@@ -1,0 +1,84 @@
+.main {
+  margin: 0;
+}
+
+.containerNav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+  
+}
+
+.mainNavContainer {
+  display: flex;
+  width: 1110px;
+  margin: 0 auto;
+  list-style: none;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+  align-items: center;
+  min-height: 95px;
+}
+
+.mainNavContainer > li {
+  display: block;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.mainSection {
+  display: flex;
+  height: 1500px;
+  margin-left: 100px;
+}
+
+.containerSliderMainText {
+  height: 385px;
+
+}
+
+.textForMainSlider {
+  display: none;
+  width: 585px;
+}
+
+.textForMainSlider > h1 {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.textForMainSlider > p {
+  width: 385px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  margin-left: 58px;
+}
+
+.active {
+  display: block;
+}
+
+.containerForButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.pathToShop {
+  background-color: rgba(110, 156, 159, 1);
+  padding: 22px 50px;
+  border: none;
+  font-size: 17px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nextSection {
+  width: 67px;
+  height: 67px;
+  background-color: rgba(110, 156, 159, 0.5);
+  border: none;
+  padding: 0;
+}

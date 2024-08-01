@@ -40,3 +40,7 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+body {
+  margin: 0;
+  background: rgba(255, 255, 255, 1);
+}
