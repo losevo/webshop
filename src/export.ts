@@ -12,6 +12,7 @@ import telegramPicture from '../public/images/telegram.svg';
 import linkedinPicture from '../public/images/linkedin.svg';
 import githubPicture from '../public/images/github.svg';
 import strelka from '../public/images/strelka.svg';
+import shopBag from '../public/images/shopping-bag.svg'
 
 export {
     mainPicture1,
@@ -28,4 +29,5 @@ export {
     linkedinPicture,
     githubPicture,
     strelka,
+    shopBag,
 }

@@ -1,41 +1,54 @@
 .main {
   margin: 0;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .containerNav {
   position: sticky;
   width: 100%;
   top: 0;
-  background-color: rgba(255, 255, 255, 1);
-  
+  background-color: inherit;
 }
 
 .mainNavContainer {
   display: flex;
-  width: 1110px;
+  width: 100%;
   margin: 0 auto;
   list-style: none;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 1);
   align-items: center;
   min-height: 95px;
+  z-index: 10;
+  padding: 0;
 }
 
 .mainNavContainer > li {
   display: block;
   font-size: 15px;
   line-height: 21px;
+  z-index: 1;
+}
+
+.mainNavContainer > .navShop {
+  display: flex;
+  gap: 45px;
+}
+
+.mainNavContainer > div {
+  display: flex;
+  gap: 20px;
 }
 
 .mainSection {
   display: flex;
-  height: 1500px;
-  margin-left: 100px;
+  height: 826px;
 }
 
 .containerSliderMainText {
   height: 385px;
-
+  position: relative;
+  top: 100px;
 }
 
 .textForMainSlider {
@@ -57,6 +70,10 @@
   margin-left: 58px;
 }
 
+.teamPicture {
+  display: none;
+}
+
 .active {
   display: block;
 }
@@ -73,6 +90,8 @@
   font-size: 17px;
   line-height: 23px;
   color: rgba(255, 255, 255, 1);
+  height: 67px;
+  width: 243px;
 }
 
 .nextSection {
@@ -81,4 +100,259 @@
   background-color: rgba(110, 156, 159, 0.5);
   border: none;
   padding: 0;
+}
+
+.rectangleRightSide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 705px;
+  height: 826px;
+  background-color: rgba(241, 234, 220, 1);
+  z-index: -1;
+}
+
+.mainPicture1 {
+  position: relative;
+  left: 60px;
+  top: 120px;
+  z-index: 1;
+}
+
+.mainPicture2 {
+  position: relative;
+  top: -200px;
+  z-index: 2;
+}
+
+.mainPicture3 {
+  position: relative;
+  z-index: 2;
+  right: 60px;
+  top: -142px;
+}
+
+.containerSlider {
+  position: relative;
+  left: 331px;
+  top: 100px;
+  display: flex;
+  gap: 12px;
+}
+
+.slider {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(209, 209, 209, 1);
+  border: none;
+}
+
+.activeSlider {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.newCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 92px;
+  margin-bottom: 130px;
+}
+
+.newCollection > h2, .importantSection > h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.shopContainer, .importantContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.importantContainer {
+  gap: 30px;
+}
+
+.importantContainer > article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 350px;
+}
+
+.importantSection, .teamSection {
+  display: flex;
+  gap: 92px;
+  margin-bottom: 130px;
+  flex-direction: column;
+}
+
+.teamSection > div {
+  display: flex;
+  gap: 124px;
+  align-items: center;
+}
+
+.importantText {
+  display: flex;
+  width: 305px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.importantText > h3, 
+.descriptionAboutTeam > h3 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.importantText > p, 
+.descriptionAboutTeam > p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.shopContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.shopContainer  p {
+  margin: 0;
+}
+
+.shopPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.shopPrice > h4 {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.shopPrice > p {
+  color: rgba(153, 142, 120, 1);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.pathToShop.primary {
+  align-self: center;
+  color: rgba(110, 156, 159, 1);
+  background-color: inherit;
+  border: 1px solid rgba(110, 156, 159, 1);
+}
+
+.descriptionAboutTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footer {
+  min-height: 363px;
+  background-color: rgba(241, 234, 220, 1);
+  display: grid;
+  
+}
+
+.footerContainer {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.footerContainer > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 204px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.rights > p {
+  margin: 0;
+}
+
+.footerNameAndRights  p {
+  margin: 0;
+}
+
+.footerNav > ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footerMainNav {
+  display: flex;
+  width: 400px;
+  gap: 45px;
+  margin: 0;
+}
+
+.footerMainNav > li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.secondaryFooterNav {
+  display: flex;
+  width: 70px;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 103px;
+}
+
+.contactContainerFooter p{
+  margin: 0;
+  text-align: end;
+}
+
+.contactFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerSocial, .footerCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 9px;
+}
+
+.footerCards {
+  margin-bottom: 20px;
 }
