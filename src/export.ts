@@ -13,6 +13,7 @@ import linkedinPicture from '../public/images/linkedin.svg';
 import githubPicture from '../public/images/github.svg';
 import strelka from '../public/images/strelka.svg';
 import shopBag from '../public/images/shopping-bag.svg'
+import arrow from '../public/images/arrow.svg'
 
 export {
     mainPicture1,
@@ -30,4 +31,5 @@ export {
     githubPicture,
     strelka,
     shopBag,
+    arrow
 }

@@ -4,6 +4,15 @@
   margin: 0 auto;
 }
 
+.main a, .footer a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.main a:hover, .footer a:hover {
+  color: rgba(110, 156, 159, 1);
+}
+
 .containerNav {
   position: sticky;
   width: 100%;
@@ -81,6 +90,7 @@
 .containerForButtons {
   display: flex;
   justify-content: center;
+  
 }
 
 .pathToShop {
@@ -92,14 +102,17 @@
   color: rgba(255, 255, 255, 1);
   height: 67px;
   width: 243px;
+  cursor: pointer;
 }
 
 .nextSection {
+  box-sizing: border-box;
   width: 67px;
   height: 67px;
-  background-color: rgba(110, 156, 159, 0.5);
+  background-color: rgba(110, 156, 159, 0.1);
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .rectangleRightSide {
@@ -145,6 +158,7 @@
   height: 4px;
   background-color: rgba(209, 209, 209, 1);
   border: none;
+  cursor: pointer;
 }
 
 .activeSlider {
@@ -158,7 +172,7 @@
   margin-bottom: 130px;
 }
 
-.newCollection > h2, .importantSection > h2 {
+.newCollection > h2, .importantSection > h2, .teamSection > h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 500;
@@ -168,6 +182,29 @@
 .shopContainer, .importantContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.colPicHover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 478px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.colPicHover:hover {
+  background-color: rgba(110, 156, 159, 0.64);
+}
+
+.arrow {
+  display: none;
+}
+
+.colPicHover:hover .arrow {
+  display: block;
 }
 
 .importantContainer {
